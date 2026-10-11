@@ -1,20 +1,20 @@
 export const projects = [
   {
-    id: "vidyasetu",
-    title: "VidyaSetu – School Management ERP",
+    id: "campus-sentinel",
+    title: "Campus Sentinel – School Management ERP",
     description: "Full-stack School Management ERP streamlining administrative and academic tracking.",
     problem: "Schools face challenges in managing student attendance, fee tracking, and maintaining seamless communication between administration and parents.",
     solution: "Developed a centralized ERP system that streamlines student attendance, fee management, and academic tracking while enhancing administration-parent communication.",
     contribution: "Developed the full-stack architecture and integrated the core modules.",
     technologies: ["React.js", "Node.js", "REST APIs"],
     githubUrl: undefined, 
-    liveUrl: undefined,
-    imagePlaceholder: "VidyaSetu ERP",
+    liveUrl: "https://www.campussentinel.com/",
+    imagePlaceholder: "Campus Sentinel ERP",
     images: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop"
-    ]
+      "/campus-sentinel.png"
+    ],
+    imageContain: true,
+    imageBg: "bg-white"
   },
   {
     id: "tailor-management",
@@ -25,12 +25,10 @@ export const projects = [
     contribution: "Designed and developed the frontend and backend integration.",
     technologies: ["HTML5", "CSS3", "JavaScript"],
     githubUrl: "https://github.com/AbhiPatil1305",
-    liveUrl: undefined, 
+    liveUrl: "https://yaksmensweartms.netlify.app", 
     imagePlaceholder: "Tailor Management UI",
     images: [
-      "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1579298245158-33e8f568f7d3?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?q=80&w=1200&auto=format&fit=crop"
+      "/tailor-management.png"
     ]
   },
   {
@@ -45,9 +43,7 @@ export const projects = [
     liveUrl: undefined,
     imagePlaceholder: "Robot Interface",
     images: [
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=1200&auto=format&fit=crop"
+      "/pipe-inspection-robot.jpg"
     ]
   },
   {
@@ -62,9 +58,7 @@ export const projects = [
     liveUrl: undefined,
     imagePlaceholder: "Crime Management DB",
     images: [
-      "https://images.unsplash.com/photo-1502809737437-1d85c70dd2ca?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1551808525-51a94da548ce?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop"
+      "/police-crime-management.jpg"
     ]
   },
   {
@@ -79,9 +73,37 @@ export const projects = [
     liveUrl: undefined,
     imagePlaceholder: "Leakage Analytics",
     images: [
-      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1517404215738-15263e9f9178?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?q=80&w=1200&auto=format&fit=crop"
+      "/water-leakage-detection.jpg"
+    ]
+  },
+  {
+    id: "mediquery",
+    title: "MediQuery – AI Medical Document Assistant",
+    description: "AI-powered medical document assistant using RAG (Retrieval-Augmented Generation) that lets users upload medical reports and ask questions in natural language to instantly retrieve relevant health information.",
+    problem: "Patients receive complex medical documents — blood tests, prescriptions, diagnostic reports — but struggle to understand or quickly find specific information within them, often leading to confusion and unnecessary clinic visits.",
+    solution: "Built a full-stack RAG-based assistant where users upload medical reports, the system extracts and embeds document content using semantic search (pgvector), and an LLM generates accurate, source-referenced answers to natural language queries — with support for comparing information across multiple reports.",
+    contribution: "Architected the end-to-end RAG pipeline including document processing, embedding generation, vector storage with pgvector, semantic retrieval, and LLM-powered answer generation. Built the React frontend and FastAPI backend.",
+    technologies: ["React", "FastAPI", "Python", "Supabase", "PostgreSQL", "pgvector", "Embeddings", "RAG", "LLM"],
+    githubUrl: undefined,
+    liveUrl: "https://mediquery-ai-app.netlify.app/",
+    imagePlaceholder: "MediQuery AI",
+    images: [
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: "sonali-beauty-parlour",
+    title: "Sonali Beauty Parlour – Business Website",
+    description: "Developed and deployed a responsive business website for Sonali Beauty Parlour to establish its online presence and showcase beauty services through a clean, user-friendly interface.",
+    problem: "Small beauty parlour businesses lack an online presence, making it difficult for potential customers to discover their services, view offerings, or get in touch conveniently.",
+    solution: "Designed and built a fully responsive website that helps customers explore the parlour, learn about its beauty and salon services, and connect with the business — deployed on Vercel for fast, reliable public access.",
+    contribution: "Developed the complete frontend with responsive design for desktop and mobile, created user-friendly navigation with an attractive interface, and handled deployment on Vercel.",
+    technologies: ["React", "Tailwind CSS", "Vercel", "Responsive Design"],
+    githubUrl: "https://github.com/AbhiPatil1305",
+    liveUrl: "https://sonali-beauty-parlour.vercel.app/",
+    imagePlaceholder: "Sonali Beauty Parlour",
+    images: [
+      "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200&auto=format&fit=crop"
     ]
   }
 ];

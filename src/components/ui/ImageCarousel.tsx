@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function ImageCarousel({ images }: { images: string[] }) {
+export default function ImageCarousel({ images, imageContain, imageBg }: { images: string[], imageContain?: boolean, imageBg?: string }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function ImageCarousel({ images }: { images: string[] }) {
   if (!images || images.length === 0) return null;
 
   return (
-    <div className="relative w-full h-full overflow-hidden bg-surface">
+    <div className={`relative w-full h-full overflow-hidden ${imageBg || 'bg-surface'}`}>
       <AnimatePresence initial={false}>
         <motion.img
           key={currentIndex}
@@ -25,7 +25,7 @@ export default function ImageCarousel({ images }: { images: string[] }) {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="absolute inset-0 w-full h-full object-cover"
+          className={`absolute inset-0 w-full h-full ${imageContain ? 'object-contain p-8' : 'object-cover'}`}
           alt={`Slide ${currentIndex}`}
         />
       </AnimatePresence>

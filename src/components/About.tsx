@@ -1,27 +1,37 @@
 import { motion } from 'framer-motion';
-import { Code, Cloud, Layout, Lightbulb } from "lucide-react";
+import { Code, Cloud, Layout, Lightbulb, Cpu, Box } from "lucide-react";
 
 export default function About() {
   const interests = [
     {
       icon: Code,
-      title: 'Development',
-      description: 'Building robust, scalable applications with modern web technologies.',
+      title: 'Full-Stack Development',
+      description: 'Building robust, scalable applications with modern web technologies and clean architecture.',
+    },
+    {
+      icon: Cpu,
+      title: 'IoT & Embedded Systems',
+      description: 'Designing smart devices with ESP32, sensors, and microcontrollers for real-world automation.',
+    },
+    {
+      icon: Box,
+      title: '3D Printing & Prototyping',
+      description: 'Bringing ideas to life through 3D printing, CAD modeling, and hardware fabrication.',
+    },
+    {
+      icon: Layout,
+      title: 'UI/UX & GUI Design',
+      description: 'Crafting intuitive, accessible, and visually engaging interfaces and user experiences.',
     },
     {
       icon: Cloud,
       title: 'Cloud & DevOps',
-      description: 'Deploying scalable applications, containerization, and CI/CD.',
-    },
-    {
-      icon: Layout,
-      title: 'UI/UX Design',
-      description: 'Crafting intuitive, accessible, and visually engaging interfaces.',
+      description: 'Deploying scalable applications, containerization, and CI/CD pipelines.',
     },
     {
       icon: Lightbulb,
-      title: 'Problem Solving',
-      description: 'Turning complex real-world challenges into elegant digital solutions.',
+      title: 'AI & Problem Solving',
+      description: 'Leveraging AI, RAG pipelines, and LLMs to turn complex challenges into smart solutions.',
     },
   ];
 
@@ -81,7 +91,7 @@ export default function About() {
                 I enjoy working at the intersection of <strong className="text-primaryText font-medium">technology and design</strong> — building applications that are not only functional, but also easy and enjoyable to use. From developing full-stack applications and cloud solutions to experimenting with connected devices, I like learning by building and solving problems through technology.
               </p>
               <p>
-                Currently, I’m exploring <strong className="text-primaryText font-medium">modern web development, and UI/UX design</strong>. I’m especially interested in understanding how thoughtful user flows, visual hierarchy, and interaction design can make complex technology feel simple.
+                Currently, I’m focused on improving my <strong className="text-primaryText font-medium">Data Structures and Algorithms (DSA)</strong> skills, strengthening my problem-solving abilities, and building a deeper understanding of programming fundamentals. I’m continuously learning to write efficient, optimized code and develop logical thinking to solve complex technical challenges.
               </p>
               <p>
                 For me, every project is an opportunity to <strong className="text-primaryText font-medium">learn something new, experiment with ideas, and build something useful.</strong>

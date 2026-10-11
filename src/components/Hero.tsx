@@ -48,7 +48,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="text-lg md:text-xl text-secondaryText leading-relaxed hover:text-primaryText transition-colors duration-300 max-w-2xl mx-auto mb-10"
         >
-          I'm a software developer exploring modern web experiences and UI/UX design. I enjoy turning ideas and real-world problems into useful digital products.
+          I'm a software developer passionate about building useful applications, improving my DSA skills, and solving real-world problems through technology.
         </motion.p>
 
         <motion.div

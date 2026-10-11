@@ -3,7 +3,6 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
-import CaseStudies from './components/CaseStudies'
 import Experience from './components/Experience'
 import Achievements from './components/Achievements'
 import Contact from './components/Contact'
@@ -20,7 +19,6 @@ export default function App() {
         <About />
         <Skills />
         <Projects />
-        <CaseStudies />
         <Experience />
         <Achievements />
         <Contact />
